@@ -21,7 +21,5 @@ spec:
       containers:
       - image: nginx
         name: nginx
-      nodeSelector:
-        kubernetes.io/hostname: worker1
         resources: {}
 status: {}
