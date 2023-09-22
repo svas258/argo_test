@@ -19,7 +19,7 @@ metadata:
 spec:
   accessModes:
     - ReadWriteOnce
-  storageClassName: local  
+  storageClassName: jenkins-storage-class
   resources:
     requests:
       storage: 5Gi
