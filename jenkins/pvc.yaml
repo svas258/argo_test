@@ -9,8 +9,8 @@ spec:
   accessModes:
     - ReadWriteOnce 
   storageClassName: jenks
-  local:
-    path: /root/
+  hostPath:
+    path: /var/jenkins_home
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
@@ -21,5 +21,4 @@ spec:
     - ReadWriteOnce  
   resources:
     requests:
-      storage: 5Gi  
-  storageClassName: jenks
+      storage: 5Gi
