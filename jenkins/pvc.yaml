@@ -7,8 +7,9 @@ spec:
     storage: 10Gi  
   volumeMode: Filesystem  
   accessModes:
-    - ReadWriteOnce 
-  storageClassName: jenks
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain 
+  storageClassName: jenkins-storage-class
   hostPath:
     path: /var/jenkins_home
 ---
